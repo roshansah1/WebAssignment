@@ -9,3 +9,4 @@ This is your assignment 2, where you have to make your form to take personal det
 - Create index.html file in `./Form` folder
 - Create the above form using HTML only
 - Host the Form and provide the link in this README file
+- https://roshansah1.github.io/WebAssignment/2-HTML/202-HTML-FORM/HTML-202-02-Form/
