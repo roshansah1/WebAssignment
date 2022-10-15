@@ -15,7 +15,7 @@ How to use this repository
 | ----- | ----- | --------------------------------------------------------- | ----------- |
 | 1     | GIT   | [COMMAND LINE](./0-Git/GIT-001-COMMANDLINE/ )            |    [COMMAND LINE COMPLETED](./0-Git/GIT-001-COMMANDLINE/ )      |
 | 2     | GIT   | [GIT-002-01](./0-Git/GIT-002-GIT-PRACTICE/)              |      [GIT-002-01](https://github.com/roshansah1/Geekster-GIT) -- [HOSTED LINK](https://roshansah1.github.io/Geekster-GIT/second.txt)      |
-| 2     | GIT   | [GIT-002-02](./0-Git/GIT-002-GIT-PRACTICE/)              |       [GIT-002-02]()      |
+| 2     | GIT   | [GIT-002-02](./0-Git/GIT-002-GIT-PRACTICE/)              |       [GIT-002-02](https://github.com/roshansah1/very-basic-resume)      |
 
 # JS Basics
 
