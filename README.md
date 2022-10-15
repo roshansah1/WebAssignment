@@ -37,7 +37,7 @@ How to use this repository
 | S No. | Topic | Assignment                                                               | Hosted Link |
 | ----- | ----- | ------------------------------------------------------------------------ | ----------- |
 | 1     | CSS   | [CSS BLOG WEBSITE](./3-CSS/301-CSS-BLOG-WEBSITE/) [CSS-301-01]               | [CSS BLOG WEBSITE](https://roshansah1.github.io/WebAssignment/3-CSS/301-CSS-BLOG-WEBSITE/CSS-301-01/)            |
-| 2     | CSS   | [CSS BUILDING CAFE MENU](./3-CSS/302-CSS-Building-Cafe-Menu/)  [CSS-302-01]  |             |
+| 2     | CSS   | [CSS BUILDING CAFE MENU](./3-CSS/302-CSS-Building-Cafe-Menu/)  [CSS-302-01]  |  [CSS BUILDING CAFE MENU](https://roshansah1.github.io/WebAssignment/3-CSS/302-CSS-Building-Cafe-Menu/CSS-302-01/)           |
 | 3     | CSS   | [CSS COLOR MAKER](./3-CSS/303-CSS-COLOR-MARKER/)     [CSS-303-01]            |             |
 | 4     | CSS   | [CSS-BOX-MODEL](./3-CSS/304-CSS-BOX-MODEL/)     [CSS-304-01]                 |             |
 | 4     | CSS   | [CSS-BOX-MODEL](./3-CSS/304-CSS-BOX-MODEL/)     [CSS-304-02]                 |             |
