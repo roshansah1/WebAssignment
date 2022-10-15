@@ -1,1 +1,23 @@
 /* start your css here */
+h4{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+   }
+.main-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.text{
+border : 2px solid black;
+/* height :680px; */
+width :640px;
+border : none;
+margin-top: 10px;
+}
+.footer{
+margin-top: 50px;
+}
