@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="image">
+           <img src="https://rukminim1.flixcart.com/image/416/416/jms25jk0/hair-serum/w/h/f/50-hair-serum-50ml-whiskers-original-imaf9jw3j42ypznp.jpeg">
+        </div>
+        <div class="product-name">
+             <p class="name"> Whiskers Hair Serum (50 ml)</p> 
+             <p class="price"> ₹550.00 </p>
+        </div>
+    </div>
+
+    
+       <script>
+        let box = document.getElementsByClassName("main-div")[0];
+        box.addEventListener("click", () => {
+            //window.confirm("Do You Want to Buy this Product");
+            
+            if(confirm("Do You Want to Buy this Product")) {
+                window.location = 'https://www.flipkart.com/whiskers-hair-serum/p/itmfec6c77b27375';
+            }else{
+                //do nothing
+            }
+        })
+    </script>
+</body>
 </html>

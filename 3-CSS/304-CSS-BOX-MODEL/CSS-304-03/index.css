@@ -1,1 +1,44 @@
 /* start your css here */
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-div{
+            height: 60%;
+            width: 450px;
+            background-color: rgb(224, 221, 221);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid grey;
+            gap: 20px;
+        }
+        img{
+            height: 400px;
+            width: 300px;
+        }
+        .product-name{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .name{
+            font-family: Roboto,Arial,sans-serif;
+            letter-spacing: 0;
+       }
+       .price{
+        color: rgb(80, 79, 79);
+        font-weight: bold;
+        font-family: Roboto,Arial,sans-serif;
+        letter-spacing: 0;
+       }
+    
