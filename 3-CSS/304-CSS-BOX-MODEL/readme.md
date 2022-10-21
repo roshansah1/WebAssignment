@@ -19,7 +19,7 @@ Freecodecamp Link : [Learn the CSS Box Model by Building a Rothko Painting](http
 - Copy the code to this repository
 - Host the project and provide the link in this README file
 
-HOSTED LINK :
+HOSTED LINK : https://roshansah1.github.io/WebAssignment/
 
 <hr>
 
