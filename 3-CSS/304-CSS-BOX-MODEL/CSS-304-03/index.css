@@ -11,7 +11,7 @@
             height: 100vh;
         }
         .main-div{
-            height: 60%;
+            height: 540px;
             width: 450px;
             background-color: rgb(224, 221, 221);
             display: flex;
