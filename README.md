@@ -44,11 +44,11 @@ How to use this repository
 | 4     | CSS   | [CSS-BOX-MODEL](./3-CSS/304-CSS-BOX-MODEL/)     [CSS-304-03]                 |    [304-03-CSS-BOX-MODEL](https://roshansah1.github.io/WebAssignment/3-CSS/304-CSS-BOX-MODEL/CSS-304-03/)         |
 | 4     | CSS   | [CSS-BOX-MODEL](./3-CSS/304-CSS-BOX-MODEL/)     [CSS-304-04]                 |   [304-04-CSS-BOX-MODEL](https://roshansah1.github.io/WebAssignment/3-CSS/304-CSS-BOX-MODEL/CSS-304-04/)          |
 | 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-01]                      | [CSS-FLEXBOX [CSS-305-01]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-01/) |
-| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-02]                      |             |
-| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-03]                      |             |
-| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-04]                      |             |
-| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-05]                      |             |
-| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-06]                      |             |
+| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-02]                      |     [CSS-FLEXBOX [CSS-305-02]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-02/)        |
+| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-03]                      |    [CSS-FLEXBOX [CSS-305-03]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-03/)         |
+| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-04]                      |    [CSS-FLEXBOX [CSS-305-04]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-04/)         |
+| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-05]                      |    [CSS-FLEXBOX [CSS-305-05]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-05/)         |
+| 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-06]                      |      [CSS-FLEXBOX [CSS-305-06]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-06/)       |
 | 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-01]                      |             |
 | 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-02]                      |             |
 | 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-03]                      |             |
