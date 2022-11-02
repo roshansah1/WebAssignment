@@ -49,9 +49,9 @@ How to use this repository
 | 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-04]                      |    [CSS-FLEXBOX [CSS-305-04]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-04/)         |
 | 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-05]                      |    [CSS-FLEXBOX [CSS-305-05]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-05/)         |
 | 5     | CSS   | [CSS-FLEXBOX](./3-CSS/305-CSS-Flexbox/)    [CSS-305-06]                      |      [CSS-FLEXBOX [CSS-305-06]](https://roshansah1.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-06/)       |
-| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-01]                      |             |
-| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-02]                      |             |
-| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-03]                      |             |
+| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-01]                      |   [CSS-GRID [CSS-306-01](https://roshansah1.github.io/WebAssignment/3-CSS/306-CSS-Grid/CSS-306-01/)       |
+| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-02]                      |   [CSS-GRID [CSS-306-02](https://roshansah1.github.io/WebAssignment/3-CSS/306-CSS-Grid/CSS-306-02/)       |
+| 6     | CSS   | [CSS-GRID](./3-CSS/306-CSS-Grid/)          [CSS-306-03]                      |   [CSS-GRID [CSS-306-03](https://roshansah1.github.io/WebAssignment/3-CSS/306-CSS-Grid/CSS-306-03/)       |
 | 7     | CSS   | [CSS-SELECTORS](./3-CSS/307-Advance-CSS-Selectors/)    [CSS-307-01]          |             |
 | 8     | CSS   | [CSS-PSEUDO-CLASSES](./3-CSS/308-CSS-Pseudo-Classes/)  [CSS-308-01]          |             |
 | 8     | CSS   | [CSS-PSEUDO-CLASSES](./3-CSS/308-CSS-Pseudo-Classes/)  [CSS-308-02]          |             |
