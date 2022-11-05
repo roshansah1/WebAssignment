@@ -37,15 +37,12 @@ svg {
     width: 35px;
     margin-left: 10px;
 }
-
-.lazy-loaded:hover {
+.nav:hover p{
+    color: black;
+ }
+.nav:hover svg{
     color: black;
 }
-
-.nav p:hover {
-    color: black;
-}
-
 .nav {
     display: flex;
     flex-direction: column;
