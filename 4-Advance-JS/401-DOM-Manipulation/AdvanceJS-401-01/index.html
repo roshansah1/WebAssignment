@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name box</title>
+</head>
+<body>
+    <main>
+        <input type="text">
+        <p>  </p>
+    </main>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        main{
+            height: 60vh;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        input{
+            height: 50px;
+            width: 300px;
+            border: 2px solid #7dffcb;
+            font-size: x-large;
+            outline-color: #7dffcb;
+            padding-left: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: x-large;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        let inputName = document.getElementsByTagName("input")[0];
+        let text = document.getElementsByTagName("p")[0];
+
+        inputName.addEventListener("keyup", () =>{
+            let name = inputName.value;
+            text.innerText = name;
+        })
+    </script>
+</body>
 </html>
