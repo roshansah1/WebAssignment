@@ -25,6 +25,7 @@ body{
    justify-content: center;
    align-items: center;
    height: 100vh;
+  
 }
 #gallery{
   display : flex;
@@ -32,6 +33,7 @@ body{
   align-items : center;
   padding : 50px;
   position: relative;
+  height: 100%;
 }
 
 img{
@@ -53,7 +55,16 @@ i:hover{
     position: absolute;
     right: 70px;
 }
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  img{
+  height : 200px;
+  width : 400px;
+  object-fit : cover;
+}
+}
 
 </style>
 <script>
