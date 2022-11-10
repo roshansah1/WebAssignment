@@ -44,6 +44,6 @@ An Image Slider that comprises several images displayed on a web application is 
 
 <hr>
 
-HOSTED LINK :
+HOSTED LINK : http://127.0.0.1:5500/Assignment_HTML/AdvanceJS-401-03.html
 
 <hr>
