@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="Google Logo" />
+        <div class="search">
+            <div class="search__input">
+                <span class="material-icons"> search </span>
+                <input type="text" />
+
+                <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png"
+                    alt="" />
+            </div>
+
+            <div class="search__buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <div class="language">
+                <p style="font-size: medium"> Google offered in: </p>
+                <p> <a href=""> हिन्दी </a> <a href="">বাংলা</a> <a href="">తెలుగు</a> <a href="">मराठी</a> <a
+                        href="">தமிழ்</a> <a href="">ગુજરાતી</a> <a href="">ಕನ್ನಡ</a> <a href="">മലയാളം</a> <a
+                        href="">ਪੰਜਾਬੀ</a> </p>
+            </div>
+        </div>
+    </main>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin-bottom: 10vh;
+        }
+
+        img {
+            object-fit: contain;
+            height: 100px;
+        }
+
+        .search__input {
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgray;
+            height: 30px;
+            padding: 10px 20px;
+            border-radius: 999px;
+            width: 75vw;
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 560px;
+        }
+
+        .search__input input {
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+        }
+
+        .search__input .material-icons {
+            color: gray;
+        }
+
+        .search__buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search__buttons button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .search__buttons button:hover {
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+
+        .mic {
+            width: 14px;
+            height: 20px;
+        }
+
+        input {
+            font-size: large;
+        }
+
+        .language {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+        }
+
+        .language p {
+            color: #4d5156;
+            display: inline-block;
+            line-height: 28px;
+            font-size: small;
+            display: flex;
+            gap: 10px;
+        }
+
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pTag {
+            font-size: medium;
+        }
+    </style>
+    <script>
+        let button1 = document.getElementsByTagName('button')[0];
+
+        button1.innerText = "Geekster Search";
+    </script>
+</body>
+
 </html>
