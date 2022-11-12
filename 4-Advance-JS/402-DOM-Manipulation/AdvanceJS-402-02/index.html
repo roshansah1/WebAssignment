@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+</head>
+<body>
+    <main>
+        <h1> Geekster </h1>
+        <p> Click on the button to add image element </p>
+        <button> click here </button>
+    </main>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        .image{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        h1{
+            color: green;
+            font-size: 60px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            font-size: large;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+    <script>
+        let button = document.getElementsByTagName('button')[0];
+        let main = document.getElementsByTagName('main')[0];
+        
+        button.addEventListener('click', () => {
+            let image = document.createElement('div');
+            image.setAttribute('class', 'image');
+            main.appendChild(image);
+            image.innerHTML = ` <h1 style="font-size: 40px"> Image Element Added. </h1>
+            <img src="https://geekster.in/images/logo.svg">`
+        })
+    </script>
+</body>
 </html>
