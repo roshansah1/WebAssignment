@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1> Charles' Tip Calculator </h1>
+    <div class="calculator">
+      <form>
+        <label>
+          How much was your bill?<br>
+          $ <input class="bill" type="text"> <br>
+        </label>
+        <label>
+          How was your service?<br>
+          <select>
+            <option value="0">-- Choose an option --</option>
+            <option value="0.3">30% - Outstanding</option>
+            <option value="0.2">20% - Good</option>
+            <option value="0.15">15% - It was okay</option>
+            <option value="0.1">10% - Bad</option>
+            <option value="0.05">5% - Terrible</option>
+          </select>
+        </label>
+        <br>
+        <label>
+          How many people are sharing the bill?<br>
+          <input type="text"> people
+        </label><br>
+        <button type="button"> Calculate!</button>
+      </form>
+    </div>
+    <div class="total-tip">
+
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #333 url(https://i.postimg.cc/P54kpMjx/food8.jpg) center center no-repeat;
+      background-size: cover;
+      color: #532827;
+
+    }
+
+    .content {
+      width: 400px;
+      margin: 40px auto 0;
+      padding: 50px;
+      box-sizing: border-box;
+      background: url(https://i.postimg.cc/sDNRp4HD/paper-pattern.jpg)top left repeat;
+      box-shadow: 0 10px 15px -8px #000;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      padding: 0 0 20px;
+      border-bottom: solid 1px #ddd
+    }
+
+    form {
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin: 25px 0;
+      font-weight: bold;
+    }
+
+    form input,
+    form select {
+      padding: 8px;
+      margin: 10px 0;
+    }
+
+    form input {
+      width: 110px;
+    }
+
+    button {
+      background: #6c2726;
+      color: white;
+      border-bottom: solid 4px #222;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 20px 30px;
+      width: 100%;
+    }
+
+    button:active {
+      position: relative;
+      top: 3px;
+    }
+
+    .total-tip {
+      font-size: large;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .total-tip h2 {
+      font-size: 50px;
+      margin: 5px;
+    }
+  </style>
+  <script>
+    let button = document.getElementsByTagName('button')[0];
+    let billInput = document.getElementsByTagName('input')[0];
+    let serviceInput = document.getElementsByTagName('select')[0];
+    let peopleInput = document.getElementsByTagName('input')[1];
+
+    button.addEventListener('click', () => {
+      let bill = billInput.value;
+      let service = serviceInput.value;
+      let people = peopleInput.value;
+
+      if (bill === "" || service == 0 || people === "") {
+        alert("please enter some values");
+        return;
+      }
+
+      var total = (bill * service) / people;
+      total = Math.round(total * 100) / 100;
+      total = total.toFixed(2);
+      totalPrice(total);
+    })
+
+    function totalPrice(total) {
+      let totalTip = document.getElementsByClassName('total-tip')[0];
+      totalTip.innerHTML = `<p> TIP AMOUNT </p>
+                                  <h2> $ ${total}</h2>
+                                  <p> each </p>`
+    }
+
+  </script>
+</body>
+
 </html>
