@@ -1,12 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1> Calculate a weight of an object on a planet</h1>
+        <div class="input">
+            <input type="text" placeholder="Mass in kilogram">
+            <select id="mySelect" onchange="myFunction()">
+                <option value=""> --select planet-- </option>
+                <option value="3.7"> MERCURY </option>
+                <option value="8.87"> VENUS </option>
+                <option value="9.8"> EARTH </option>
+                <option value="1.62"> MOON </option>
+                <option value="3.7"> MARS </option>
+                <option value="24.79"> JUPITER </option>
+                <option value="10.44"> SATURN </option>
+                <option value="8.87"> URANUS </option>
+                <option value="11.15"> NEPTUNE </option>
+                <option value="0.62"> PLUTO </option>
+            </select>
+            <button>Calculate weight</button>
+
+        </div>
+    </header>
+    <div class="planet">
+        <div class="image">
+            <img src="ProjectImage/earth.png">
+        </div>
+        <!-- <div class="weight">
+            <h2> The weight of the object on <span> MERCURY </span></h2>
+            <div class="circle">
+                
+            </div>
+        </div> -->
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('ProjectImage/galaxy.gif');
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 20px;
+            text-shadow: 3px 0 #6b6baf;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .input {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 10px;
+        }
+
+        input {
+            height: 45px;
+            width: 300px;
+            color: #6c6d6d;
+            font-size: large;
+            padding: 10px;
+        }
+
+        select {
+            width: 200px;
+            padding-left: 10px;
+            font-size: large;
+            border-radius: 5px;
+            color: #6c6d6d;
+        }
+
+        option {
+            color: black;
+        }
+
+        button {
+            width: 150px;
+            border-radius: 5px;
+            font-size: large;
+            color: white;
+            background-color: #6c6d6d;
+        }
+
+        .planet {
+            height: 70vh;
+            width: 70vw;
+            background-color: #6c6d6d;
+            opacity: 0.4;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .box {
+            height: 70vh;
+            width: 70vw;
+            background-color: #6c6d6d;
+            opacity: 0.4;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        img {
+            height: 99%;
+            width: 99%;
+            
+        }
+        .image{
+            
+        }
+        .weight {
+            height: 40%;
+            width: 50%;
+            background-color: gray;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 {
+            color: blue;
+            opacity: none;
+            font-size: 30px;
+        }
+
+        .circle {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: rgb(203, 197, 197);
+            font-size: xx-large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+        }
+
+        .smallBox , #smallBox{
+            height: 15%;
+            width: 70%;
+            background-color: #6c6d6d;
+            opacity: 0.4;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .miniBox {
+            font-size: xx-large;
+            height: 50%;
+            width: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        let button = document.getElementsByTagName('button')[0];
+        let planet = document.getElementsByClassName('planet')[0];
+
+        let body = document.getElementsByTagName('body')[0];
+        let numberInput = document.getElementsByTagName('input')[0];
+        let planetInput = document.getElementsByTagName('select')[0];
+        let options = document.getElementsByTagName('option');
+
+        let planets = {
+            "MERCURY": "ProjectImage/mercury.png",
+            "VENUS": "ProjectImage/venus.png",
+            "EARTH": "ProjectImage/earth.png",
+            "MOON": "ProjectImage/moon.png",
+            "MARS": "ProjectImage/mars.png",
+            "JUPITER": "ProjectImage/jupiter.png",
+            "SATURN": "ProjectImage/saturn.png",
+            "URANUS": "ProjectImage/uranus.png",
+            "NEPTUNE": "ProjectImage/neptune.png",
+            "PLUTO": "ProjectImage/pluto.png"
+        }
+        let name;
+        let image;
+        function myFunction() {
+            var x = document.getElementById("mySelect");
+            var i = x.selectedIndex;
+            name = x.options[i].text;
+            image = planets[name];
+        }
+
+
+
+        // planetInput.addEventListener('input' , () => {
+        //          for(let i = 0; i < planet.length; i++){
+        //                 console.log(planet[i]);
+        //          }
+        // })
+
+        // let name;
+        // let image;
+        // for (let i = 1; i < planets.length; i++) {
+        //     console.log(planets[i].name.trim());
+        //     console.log(options[i].innerText.trim());
+        //     if (planets[i].name.trim() === options[i].innerText.trim()) {
+        //         image = planets[i].image;
+        //         name = planets[i].name;
+        //     }
+        // }
+
+        //  let name;
+        //  let image;
+        // planetInput.addEventListener('input' , () => {
+        //     if(planetInput.value == "3.7") {
+        //           name = "MERCURY";
+        //           image = "solar-image/mercury.png";  
+        //     }else if(planetInput.value == "8.87"){
+        //          name = "VENUS";
+        //           image = "solar-image/venus.png"; 
+        //     }
+        //     else if(planetInput.value == "9.8"){
+        //          name = "EARTH";
+        //           image = "solar-image/earth.png";
+        //     }
+        //     else if(planetInput.value == "1.62"){
+        //         name = "MOON";
+        //           image = "solar-image/earth.png";
+        //     }
+        //     else if(planetInput.value == "3.7"){
+        //         name = "";
+        //           image = "solar-image/earth.png";
+        //     }
+        // })
+       
+
+         
+
+
+            button.addEventListener('click', () => {
+                planet.remove();
+                let number = numberInput.value;
+                let planetName = planetInput.value;
+                if (number === "") {
+            let smallBox = document.createElement('div');
+            smallBox.setAttribute('class', 'smallBox')
+            smallBox.innerHTML = `<div class="miniBox">
+                    <p> Mass is required </p> 
+                    </div>`
+            body.appendChild(smallBox);
+            button.addEventListener('mousedown', () => {
+                let del = document.getElementsByClassName('smallBox')[0];
+                del.remove();
+            })
+        }  else if(planetName == ""){
+            let smallBox = document.createElement('div');
+            smallBox.setAttribute('id', 'smallBox')
+            smallBox.innerHTML = `<div class="miniBox">
+                    <p> You did not choose a planet yet </p> 
+                    </div>`
+            body.appendChild(smallBox);
+            button.addEventListener('mousedown', () => {
+                let delt = document.getElementById('smallBox');
+                delt.remove();
+            })
+         }
+        else{
+                let total = number * planetName;
+                total = Math.round(total * 100) / 100;
+                total = total.toFixed(2);
+                let box = document.createElement('div');
+                box.setAttribute('class', 'box');
+                body.appendChild(box);
+                box.innerHTML = `<div class="image">
+            <img src="${image}">
+        </div>
+        <div class="weight">
+            <h2> The weight of the object on <span> ${name} </span></h2>
+            <div class="circle">
+                <p> ${total} N </p>
+            </div>
+        </div>`
+                button.addEventListener('mouseup', () => {
+                    let del = document.getElementsByClassName('box')[0];
+                    del.remove();
+                }) 
+            }
+        })
+
+
+    </script>
+</body>
+
 </html>
