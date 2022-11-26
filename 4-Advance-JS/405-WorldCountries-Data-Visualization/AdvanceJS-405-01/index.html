@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldCountries-Data-Visualization</title>
+</head>
+
+<body>
+    <header>
+        <h1> World Countries Data</h1>
+        <p> Currently, we have 250 countries </p>
+    </header>
+    <div class="content-1">
+        <button> POPULATION </button>
+        <button> LANGUAGES </button>
+        <p> 10 Most Spoken languages in the world </p>
+    </div>
+    <div class="content-2">
+        <div class="bigBox">
+            <span>
+                <p>English</p>
+                <div class="box" style="width:30%"></div>
+                <p class="zero"> 0 </p>
+            </span>
+            <span>
+                <p>French</p>
+                <div class="box" style="width:16%"></div>
+                <p class="zero zero-1"> 0 </p>
+            </span>
+            <span>
+                <p>Arabic</p>
+                <div class="box" style="width:10%"></div>
+                <p class="zero-2 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Spanish</p>
+                <div class="box" style="width:9%"></div>
+                <p class="zero-3 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Portuguese</p>
+                <div class="box" style="width:5%"></div>
+                <p class="zero-4 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Russian</p>
+                <div class="box" style="width:4%"></div>
+                <p class="zero-5 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Dutch</p>
+                <div class="box" style="width:4%"></div>
+                <p class="zero-6 zero"> 0 </p>
+            </span>
+            <span>
+                <p>German</p>
+                <div class="box" style="width:3.5%"></div>
+                <p class="zero-7 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Chinese</p>
+                <div class="box" style="width:3%"></div>
+                <p class="zero-8 zero"> 0 </p>
+            </span>
+            <span>
+                <p>Serbian</p>
+                <div class="box" style="width:2.5%"></div>
+                <p class="zero-9 zero"> 0 </p>
+            </span>
+        </div>
+        <div class="bigBox_2">
+            
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    header {
+        height: 120px;
+        width: 99%;
+        text-align: center;
+        background-color: #eff1f2;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 15px 10px -15px gray;
+    }
+
+    header h1 {
+        color: orange;
+        font-size: 50px;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        color: #525253;
+        font-size: 20px;
+    }
+
+    .content-1 {
+        text-align: center;
+        height: 90px;
+        background-color: #eff1f2;
+        box-shadow: gray 0px 7px 29px 0px;
+    }
+
+    .content-1 p {
+        margin: 10px;
+    }
+
+    button {
+        height: 33px;
+        width: 135px;
+        background-color: orange;
+        border: none;
+        margin: 10px;
+        transition: transform .1s ease;
+        border-radius: 3px;
+    }
+    button:active{
+            transform: translateY(5px);
+         }
+    .content-2 {
+        margin-top: 20px;
+        background-color: #eff1f2;
+        height: 65%;
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        box-shadow: gray 0px 7px 29px 0px;
+    }
+    .bigBox{
+        width: 100%;
+        padding-top: 15px;
+    }
+   .bigBox_2{
+    width: 100%;
+    padding-top: 15px;
+    display: none;
+   }
+    .content-2 p {
+        width: 80px;
+    }
+    
+
+    .zero {
+        margin-left: 3%;
+    }
+
+    .zero-1 {
+        margin-left: 17%;
+    }
+   .zero-2{
+    margin-left: 23%;
+   }
+   .zero-3{
+    margin-left: 24%;
+   }
+   .zero-4{
+    margin-left: 28%;
+   }
+   .zero-5,.zero-6{
+    margin-left: 29%;
+   }
+   .zero-7{
+    margin-left: 29.5%;
+   }
+   .zero-8{
+    margin-left: 30%;
+   }
+   .zero-9{
+    margin-left: 30.5%;
+   }
+    .box {
+        height: 4vh;
+        background-color: orange;
+        border-radius: 2.5px;
+    }
+    .bar{
+        height: 4vh;
+        background-color: orange;
+        border-radius: 2.5px;
+    }
+    span {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    
+</style>
+<script src="AdvanceJS-405-01.js"></script>
 </html>
