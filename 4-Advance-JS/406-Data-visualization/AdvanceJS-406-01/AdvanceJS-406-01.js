@@ -164,3 +164,7 @@ function removePtag() {
   pTag.innerHTML = ``;
 }
 
+
+//total countries
+let totalCountries = document.getElementById("total_countries");
+totalCountries.innerText = countries.length;
