@@ -21,7 +21,7 @@ How to use this repository
 
 | S No. | Topic     | Assignment                                | FreeCodeCamp Id | Question Done Till Now |
 | ----- | --------- | ----------------------------------------- | --------------- | --------------- |
-| 1     | JS Basics | [JS BASIC Question List](./1-JS-BASICS/) |    [@Roshan_sah](https://www.freecodecamp.org/Roshan_sah)    |      100           |
+| 1     | JS Basics | [JS BASIC Question List](./1-JS-BASICS/) |    [@Roshan_sah](https://www.freecodecamp.org/Roshan_sah)    |      125           |
 
 # HTML
 
