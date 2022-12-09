@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Validating Web Forms</h1>
+        <form>
+            <label> First Name </label>
+            <input type="text" id="first-input">
+            <span id="f-name"> First name must be alphanumeric and contain 3 - 16 characters</span>
+
+            <label> Last Name </label>
+            <input type="text" id="second-input">
+            <span id="l-name"> Last name must be alphanumeric and contain 3 - 16 characters</span>
+
+            <label> Email </label>
+            <input type="email" id="mail">
+            <span id="email"> Email must be a valid address, e.g. example@example.com </span>
+
+            <label> Password </label>
+            <input type="password" id="input-password">
+            <span id="password"> Password must be alphanumeric (@,_and - are also allowed) and <span
+                    style="display:block">between 6-20 characters</span> </span>
+
+            <label> Telephone </label>
+            <input type="text" id="phone-number">
+            <span id="number"> A valid Telephone number (11 digits and 333-333-3334) </span>
+
+            <label> Your bio </label>
+            <input type="text" id="input-text">
+            <span id="text"> Bio must contain lowercase letters, underscores, hyphens <span style="display:block">and be
+                    8 - 50 characters</span> </span>
+
+            <button id="button">Submit</button>
+        </form>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 40px;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        label {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            gap: 1rem;
+            width: 35vw;
+        }
+
+        input {
+            width: 100%;
+            height: 3rem;
+            border-radius: 5px;
+            font-size: x-large;
+            padding: 1rem;
+            border: 1px solid gray;
+            outline-color: gray;
+        }
+
+        #first-input {
+            border: 1px solid gray;
+            outline-color: gray;
+        }
+
+        button {
+            width: 24%;
+            height: 3.2rem;
+            font-size: x-large;
+            background-color: #444444;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            transition-duration: .2s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        button:active {
+            transform: scale(var(--btn-focus-scale,.95));
+        }
+
+        span {
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            color: #ffae42;
+            width: 100%;
+        }
+
+        #f-name {
+            display: none;
+        }
+
+        #l-name {
+            display: none;
+
+        }
+
+        #email {
+            display: none;
+        }
+
+        #password {
+            display: none;
+        }
+
+        #number {
+            display: none;
+        }
+
+        #text {
+            display: none;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .container {
+                align-items: flex-start;
+            }
+
+            button {
+                font-size: medium;
+                width: 5rem;
+                height: 2.5rem;
+            }
+
+            span {
+                font-size: small;
+                width: 200%;
+            }
+
+            input {
+                width: 200%;
+            }
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+
 </html>
