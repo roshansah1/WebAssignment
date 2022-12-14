@@ -6,8 +6,9 @@ input.addEventListener('keyup', (e) => {
     // let parent = document.getElementById('content');
     // parent.innerHTML = ""
     let inputName = e.target.value;
-    if(e.keyCode == 13)
-    fetchMeal(inputName)
+    if(e.keyCode == 13){
+        fetchMeal(inputName)
+    }
 })
 
 
@@ -25,8 +26,10 @@ function fetchMeal(inputName) {
                 box.setAttribute('class', 'box')
                 box.innerHTML = `<a href="${recipe}" target="_blank"><img src="${image}"></a>`
                 parent.appendChild(box)
-                input.addEventListener('keydown', () => {
-                    box.remove();
+                input.addEventListener('keydown', (e) => {
+                    if(e.keyCode == 13){
+                        box.remove();
+                    }
                 })
             }
         })
