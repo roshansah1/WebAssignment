@@ -57,6 +57,13 @@ button{
     padding: 0.8rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+button:active {
+    transform: scale(var(--btn-focus-scale,.95));
 }
 
 .weather_box{
