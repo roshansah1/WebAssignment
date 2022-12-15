@@ -8,9 +8,9 @@ let number = document.getElementById('phone-number');
 let text = document.getElementById('input-text');
 let form = document.getElementsByTagName('form')[0];
 
-// form.addEventListener('submit', (event) => {
-//    event.preventDefault();
-// })
+form.addEventListener('submit', (event) => {
+   event.preventDefault();
+})
 
 
 
