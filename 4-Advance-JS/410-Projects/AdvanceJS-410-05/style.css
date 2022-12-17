@@ -23,7 +23,7 @@ span {
     padding: 1.5rem;
     background-color: #ffd3c6;
     border-radius: 15px;
-    box-shadow: red 0px 10px 15px -3px, red 0px 4px 6px -2px;
+    box-shadow:  red 0px 10px 16px 1px;
   }
   h1{
     font-family: sans-serif;
