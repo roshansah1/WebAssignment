@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 0.1rem;
+    min-height: calc(100vh - 0rem);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    background-color: white;
+}
+
+.left_header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+button {
+    border: 1px solid #FCA311;
+    border-radius: 5px;
+    padding: 0.25rem 1rem 0.25rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #FCA311;
+    color: white;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.main_container {
+    background-color: #e5e5e5;
+    width: 100%;
+}
+
+.info_image_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.image_container img {
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    min-width: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+.box img {
+    padding: 0.5rem 1.5rem 0.5rem;
+}
+
+.top_coins_container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+
+.text {
+    text-align: center;
+    color: #FCA311;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #FFFFFF;
+    padding: 1rem 1.6rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.git_logo {
+    height: 1.5rem;
+}
+
+/* search page */
+
+.search_container {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.search_container #search {
+    color: #FCA311;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+input {
+    border-radius: 5px;
+    padding: 0.25rem 1rem 0.25rem;
+    border: 1px solid gray;
+    font-size: 1.4rem;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.footer {
+    background-color: #FFFFFF;
+    padding: 1rem 1.6rem 1rem 1rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.content_box {
+    display: flex;
+    width: 90VW;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+}
+
+.content_box:hover {
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 50%);
+}
+
+.left_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left_content h2 {
+    color: black;
+}
+
+.left_content img {
+    height: 2rem;
+}
+
+.right_content a {
+    background-color: #FFFFFF;
+    border: 1px solid #14213D;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+    transition: all 0.3s;
+    margin-left: auto;
+}
+
+.right_content a:hover {
+    background-color: #14213D;
+    color: #FFFFFF;
+}
+
+
+/* Details page */
+
+.detail_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.detail_content img {
+    padding: 5rem;
+    width: calc(25% - 0.1rem);
+}
+
+.right_detail_content {
+    padding-top: 5rem;
+    width: calc(75% - 5rem);
+
+}
+
+.right_detail_content h2 {
+    color: #FCA311;
+}
+
+.description {
+    text-align: justify;
+}
+
+.price_list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chart_box h2{
+    color:#FCA311;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.chart_box{
+    height: 50vh;
+    width: 80vw;
+    width: 100vw;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 799px) {
+    body {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    button {
+        font-size: large;
+    }
+
+    .info_image_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .info_container {
+        margin-bottom: 5rem;
+        width: 45%;
+    }
+
+    .image_container {
+        width: 50%
+    }
+
+    .image_container img {
+        width: 100%;
+    }
+
+    .text {
+        margin-top: 2rem;
+    }
+
+    .content_box {
+        padding: 0.5rem 1rem;
+    }
+
+    .box {
+        min-width: 19rem;
+        padding: 0rem;
+    }
+
+    .right_box h1 {
+        font-size: large;
+    }
+
+    hr {
+        margin-top: 1rem;
+    }
+
+    .left_content {
+        gap: 0.5rem;
+    }
+
+    .left_content img {
+        height: 1.5rem;
+    }
+
+    .left_content h2 {
+        font-size: 17px;
+        font-weight: 900;
+        text-align: left;
+        width: 6rem;
+    }
+
+    .left_content h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 0.1rem;
+    }
+
+    .right_content a {
+        padding: 0.25rem 0.5rem;
+        font-size: small;
+    }
+
+    .detail_content {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .right_detail_content {
+         padding-top: 1rem;
+         width: 100vw;
+    }
+    .right_detail_content{
+        text-align: center;
+    }
+    .detail_content img {
+        width: 45%;
+        padding: 1rem;
+    }
+    .price_list{
+        padding: 0 1rem;
+    }
+    .description{
+        padding: 0 1rem;
+    }
+    .chart_box{
+        padding: 1rem;
+        height: 306vh;
+        width: 100vw;
+    }
+    
+}
+
+@media only screen and (min-height: 1000px){
+      body {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1550px){
+    .image_container img {
+        width: 75%;
+        height: 75%;
+    }
+    
+}
