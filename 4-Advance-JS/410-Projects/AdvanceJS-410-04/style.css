@@ -41,9 +41,12 @@ h1{
 input{
     width: 95%;
     font-size: x-large;
-    padding: 0.5rem 0 0.5rem 1rem;
-    border-color: gray;
+    padding: 0.7rem 0 0.7rem 1rem;
+    border: 1px solid gray;
     border-radius: 5px;
+}
+input:focus{
+    outline-color: gray;
 }
 input::placeholder{
     color: #3e577d;
@@ -57,6 +60,13 @@ button{
     padding: 0.8rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+button:active {
+    transform: scale(var(--btn-focus-scale,.95));
 }
 
 .weather_box{
