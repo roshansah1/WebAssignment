@@ -135,7 +135,7 @@ input {
     bottom: 0px;
 }
 
-a {
+.right_content a, header a {
     text-decoration: none;
     color: black;
 }
